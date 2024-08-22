@@ -1,0 +1,271 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "gov.cdc.dex",
+    "module": "lib-cloud-proxy",
+    "version": "0.0.30-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "lib-cloud-proxy-0.0.30-SNAPSHOT.jar",
+          "url": "lib-cloud-proxy-0.0.30-SNAPSHOT.jar",
+          "size": 185249,
+          "sha512": "66debb5e1fb1d0428e1f112de18cfb8a365c7f82ed5837c94c5adfc9925300f4d91cb2928af95287265f2568a5f07cda716e1b46a15ea5a4a97fe36a9c976db6",
+          "sha256": "b1cb7edf22dd4213c60ab4d84b021c320dafdcbe477a27b38ba15733146916fd",
+          "sha1": "d7aa8372c873f1044441abfb1a9f4d3a8dd74b84",
+          "md5": "a537fd747829e950f58b41a6cbd707db"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.azure",
+          "module": "azure-sdk-bom",
+          "version": {
+            "requires": "1.2.15"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "azure-sdk-bom",
+              "type": "pom",
+              "extension": "pom"
+            }
+          }
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "bom",
+          "version": {
+            "requires": "2.20.43"
+          },
+          "excludes": [
+            {
+              "group": "io.netty",
+              "module": "*"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.micronaut.aws",
+          "module": "micronaut-aws-sdk-v2",
+          "excludes": [
+            {
+              "group": "io.netty",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "s3",
+          "excludes": [
+            {
+              "group": "io.netty",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "sqs",
+          "excludes": [
+            {
+              "group": "io.netty",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "sts",
+          "excludes": [
+            {
+              "group": "io.netty",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "com.azure",
+          "module": "azure-storage-blob",
+          "version": {
+            "requires": "12.22.1"
+          }
+        },
+        {
+          "group": "com.azure",
+          "module": "azure-storage-queue",
+          "version": {
+            "requires": "12.15.3"
+          }
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-bom",
+          "version": {
+            "requires": "3.9.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-inject"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-validation"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-runtime"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-management"
+        },
+        {
+          "group": "io.micronaut.micrometer",
+          "module": "micronaut-micrometer-core"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.9.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api"
+        },
+        {
+          "group": "com.jayway.jsonpath",
+          "module": "json-path",
+          "version": {
+            "requires": "2.7.0"
+          }
+        },
+        {
+          "group": "javax.inject",
+          "module": "javax.inject",
+          "version": {
+            "requires": "1"
+          }
+        },
+        {
+          "group": "io.reactivex.rxjava2",
+          "module": "rxjava",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.4.7"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin"
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-tcnative-boringssl-static",
+          "version": {
+            "requires": "2.0.53.Final"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "netty-tcnative-boringssl-static",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "windows-x86_64"
+            }
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-netty-shaded",
+          "version": {
+            "requires": "1.53.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lib-cloud-proxy-0.0.30-SNAPSHOT.jar",
+          "url": "lib-cloud-proxy-0.0.30-SNAPSHOT.jar",
+          "size": 185249,
+          "sha512": "66debb5e1fb1d0428e1f112de18cfb8a365c7f82ed5837c94c5adfc9925300f4d91cb2928af95287265f2568a5f07cda716e1b46a15ea5a4a97fe36a9c976db6",
+          "sha256": "b1cb7edf22dd4213c60ab4d84b021c320dafdcbe477a27b38ba15733146916fd",
+          "sha1": "d7aa8372c873f1044441abfb1a9f4d3a8dd74b84",
+          "md5": "a537fd747829e950f58b41a6cbd707db"
+        }
+      ]
+    }
+  ]
+}

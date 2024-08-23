@@ -1,7 +1,8 @@
 package gov.cdc.dex.cloud.storage.aws
 
-import gov.cdc.dex.cloud.AWSConfig
-import gov.cdc.dex.cloud.util.withDetails
+import gov.cdc.AWSConfig
+import gov.cdc.util.withDetails
+import gov.cdc.storage.aws.S3Proxy
 import io.micronaut.context.annotation.Requires
 import io.micronaut.health.HealthStatus
 import io.micronaut.management.health.indicator.HealthIndicator

@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud
+package gov.cdc
 
 import io.micronaut.context.annotation.ConfigurationBuilder
 import io.micronaut.context.annotation.ConfigurationProperties

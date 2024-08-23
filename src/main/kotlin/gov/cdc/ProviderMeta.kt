@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud
+package gov.cdc
 
 /**
  * Intended to provide access to any provider details (which provider, region, account, etc.)

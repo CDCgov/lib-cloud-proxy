@@ -1,6 +1,7 @@
 package gov.cdc.dex.cloud.storage
 
-import gov.cdc.dex.cloud.ProviderMeta
+import gov.cdc.ProviderMeta
+import gov.cdc.storage.CloudFile
 import io.micronaut.http.MediaType
 import java.io.InputStream
 

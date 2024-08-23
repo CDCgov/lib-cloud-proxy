@@ -1,12 +1,13 @@
-package gov.cdc.dex.cloud.messaging.azure
+package gov.cdc.messaging.azure
 
 
 import com.azure.storage.queue.QueueClientBuilder
-import gov.cdc.dex.cloud.AzureConfig
-import gov.cdc.dex.cloud.Providers
-import gov.cdc.dex.cloud.messaging.CloudMessage
-import gov.cdc.dex.cloud.messaging.CloudMessaging
-import gov.cdc.dex.cloud.util.withMetrics
+import gov.cdc.AzureConfig
+import gov.cdc.Providers
+import gov.cdc.messaging.CloudMessage
+import gov.cdc.messaging.CloudMessaging
+import gov.cdc.dex.cloud.messaging.azure.ASQMessage
+import gov.cdc.util.withMetrics
 import io.micrometer.core.instrument.MeterRegistry
 import io.micronaut.context.annotation.Requires
 import org.slf4j.LoggerFactory
@@ -14,10 +15,11 @@ import java.time.Duration
 import java.util.*
 import javax.inject.Singleton
 
-
+// Azure Storage Queue
 @Singleton
 @Requires(property = "azure.asq")
-class ASQProxy(private val azureConfig: AzureConfig, private val meterRegistry: MeterRegistry? = null) : CloudMessaging {
+class ASQProxy(private val azureConfig: AzureConfig, private val meterRegistry: MeterRegistry? = null) :
+    CloudMessaging {
 
 
     private val logger = LoggerFactory.getLogger(ASQProxy::class.java.name)

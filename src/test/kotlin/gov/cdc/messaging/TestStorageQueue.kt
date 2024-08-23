@@ -1,7 +1,6 @@
 package gov.cdc.dex.cloud.messaging
 
-import io.micronaut.test.extensions.junit5.annotation.MicronautTest
-import org.junit.jupiter.api.Test
+import gov.cdc.messaging.CloudMessaging
 import javax.inject.Inject
 
 //@MicronautTest Disabling tests for now because not using message queues

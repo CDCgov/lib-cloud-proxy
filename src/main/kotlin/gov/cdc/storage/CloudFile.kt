@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.storage
+package gov.cdc.storage
 
 import java.util.regex.Pattern
 

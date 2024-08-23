@@ -1,5 +1,6 @@
-package gov.cdc.dex.cloud.storage
+package gov.cdc.storage
 
+import gov.cdc.dex.cloud.storage.CloudStorage
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Tag

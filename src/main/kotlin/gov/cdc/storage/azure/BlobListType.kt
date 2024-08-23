@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.storage.azure
+package gov.cdc.storage.azure
 
 enum class BlobListType {
     FILE,

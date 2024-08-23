@@ -1,7 +1,7 @@
 package gov.cdc.dex.cloud.messaging.azure
 
 import com.jayway.jsonpath.JsonPath
-import gov.cdc.dex.cloud.messaging.CloudMessage
+import gov.cdc.messaging.CloudMessage
 
 class ASQMessage (
     id: String,

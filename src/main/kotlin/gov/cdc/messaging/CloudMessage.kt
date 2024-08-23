@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.messaging
+package gov.cdc.messaging
 
 abstract class CloudMessage(
     val id: String,

@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.util
+package gov.cdc.util
 
 import io.micronaut.health.HealthStatus
 import io.micronaut.management.health.indicator.HealthResult

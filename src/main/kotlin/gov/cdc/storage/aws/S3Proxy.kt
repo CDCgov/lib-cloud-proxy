@@ -1,15 +1,15 @@
-package gov.cdc.dex.cloud.storage.aws
+package gov.cdc.storage.aws
 
-import gov.cdc.dex.cloud.AWSConfig
-import gov.cdc.dex.cloud.Providers
-import gov.cdc.dex.cloud.storage.CloudFile
+import gov.cdc.AWSConfig
+import gov.cdc.Providers
+import gov.cdc.storage.CloudFile
 import gov.cdc.dex.cloud.storage.CloudStorage
 import gov.cdc.dex.cloud.storage.META_CONTENT_ENCODING
 import gov.cdc.dex.cloud.storage.META_CONTENT_LENGTH
 import gov.cdc.dex.cloud.storage.META_CONTENT_TYPE
-import gov.cdc.dex.cloud.util.decode
-import gov.cdc.dex.cloud.util.validateFor
-import gov.cdc.dex.cloud.util.withMetrics
+import gov.cdc.util.decode
+import gov.cdc.util.validateFor
+import gov.cdc.util.withMetrics
 import io.micrometer.core.instrument.MeterRegistry
 import io.micronaut.context.annotation.Requires
 import io.micronaut.http.MediaType

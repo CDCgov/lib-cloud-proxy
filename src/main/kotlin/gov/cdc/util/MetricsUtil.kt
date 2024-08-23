@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.util
+package gov.cdc.util
 
 import io.micrometer.core.instrument.MeterRegistry
 import io.micrometer.core.instrument.Timer

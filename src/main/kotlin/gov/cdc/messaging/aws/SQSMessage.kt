@@ -1,7 +1,7 @@
-package gov.cdc.dex.cloud.messaging.aws
+package gov.cdc.messaging.aws
 
 import com.jayway.jsonpath.JsonPath
-import gov.cdc.dex.cloud.messaging.CloudMessage
+import gov.cdc.messaging.CloudMessage
 
 private const val SQS_KEY_PATH = "$['Records'][0]['s3']['object']['key']"
 

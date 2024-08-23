@@ -1,6 +1,6 @@
-package gov.cdc.dex.cloud.messaging
+package gov.cdc.messaging
 
-import gov.cdc.dex.cloud.ProviderMeta
+import gov.cdc.ProviderMeta
 
 interface CloudMessaging : ProviderMeta {
     fun listQueues(vararg prefixes: String): List<String>

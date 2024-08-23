@@ -1,8 +1,9 @@
-package gov.cdc.dex.cloud.storage.azure
+package gov.cdc.storage.azure
 
-import gov.cdc.dex.cloud.AzureConfig
-import gov.cdc.dex.cloud.messaging.aws.SQSHealth
-import gov.cdc.dex.cloud.util.withDetails
+import gov.cdc.AzureConfig
+import gov.cdc.messaging.aws.SQSHealth
+import gov.cdc.dex.cloud.storage.azure.BlobProxy
+import gov.cdc.util.withDetails
 import io.micronaut.context.annotation.Requires
 import io.micronaut.health.HealthStatus
 import io.micronaut.management.health.indicator.HealthIndicator

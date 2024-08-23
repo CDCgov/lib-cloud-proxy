@@ -1,13 +1,13 @@
-package gov.cdc.dex.cloud.messaging.aws
+package gov.cdc.messaging.aws
 
-import gov.cdc.dex.cloud.AWSConfig
-import gov.cdc.dex.cloud.Providers
-import gov.cdc.dex.cloud.messaging.CloudMessage
-import gov.cdc.dex.cloud.messaging.CloudMessaging
-import gov.cdc.dex.cloud.util.stopTimer
-import gov.cdc.dex.cloud.util.validateFor
-import gov.cdc.dex.cloud.util.withMetrics
-import gov.cdc.dex.cloud.util.withMetricsTimer
+import gov.cdc.AWSConfig
+import gov.cdc.Providers
+import gov.cdc.messaging.CloudMessage
+import gov.cdc.messaging.CloudMessaging
+import gov.cdc.util.stopTimer
+import gov.cdc.util.validateFor
+import gov.cdc.util.withMetrics
+import gov.cdc.util.withMetricsTimer
 import io.micrometer.core.instrument.MeterRegistry
 import io.micronaut.context.annotation.Requires
 

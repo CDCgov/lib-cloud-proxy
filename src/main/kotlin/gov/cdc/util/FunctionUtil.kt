@@ -1,4 +1,4 @@
-package gov.cdc.dex.cloud.util
+package gov.cdc.util
 
 import java.net.URLDecoder
 import java.nio.charset.Charset
